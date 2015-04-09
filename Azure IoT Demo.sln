@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QiMata.AzureIoT.EventHubsClient", "QiMata.AzureIoT.EventHubsClient\QiMata.AzureIoT.EventHubsClient.csproj", "{13E680EE-8060-4BE1-9DF0-A558782B062B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{EDB34D01-86C1-459E-8A64-08068DC07E35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{51813809-577F-4883-81EF-E428ADD08BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QiMata.AzureIoT.BluetoothClient.Android", "QiMata.AzureIoT.BluetoothClient.Android\QiMata.AzureIoT.BluetoothClient.Android.csproj", "{63294759-B6CE-41D6-83C9-8AD0BCDFC900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13E680EE-8060-4BE1-9DF0-A558782B062B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E680EE-8060-4BE1-9DF0-A558782B062B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E680EE-8060-4BE1-9DF0-A558782B062B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E680EE-8060-4BE1-9DF0-A558782B062B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13E680EE-8060-4BE1-9DF0-A558782B062B} = {EDB34D01-86C1-459E-8A64-08068DC07E35}
+		{63294759-B6CE-41D6-83C9-8AD0BCDFC900} = {51813809-577F-4883-81EF-E428ADD08BFE}
+	EndGlobalSection
+EndGlobal
