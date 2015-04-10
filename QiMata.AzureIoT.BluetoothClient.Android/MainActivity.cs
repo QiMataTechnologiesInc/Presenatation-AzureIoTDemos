@@ -22,14 +22,14 @@ namespace QiMata.AzureIoT.BluetoothClient.Android
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.StartButton);
+            _startButton = FindViewById<Button>(Resource.Id.StartButton);
 
-            button.Click += delegate(object sender, EventArgs e) { SetupBackgroundService(); };
+            _startButton.Click += delegate(object sender, EventArgs e) { SetupBackgroundService(); };
         }
 
         private void SetupBackgroundService()
         {
-            
+            this.StartService(new Intent(this, typeof(EventHubService)));
         }
     }
 }

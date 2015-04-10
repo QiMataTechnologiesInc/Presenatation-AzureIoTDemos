@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Include="EventHubClient.cs" />
     <Compile Include="EventHubSettings.cs" />
+    <Compile Include="Helpers\StatisticalContainer.cs" />
+    <Compile Include="Models\EventHubData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
