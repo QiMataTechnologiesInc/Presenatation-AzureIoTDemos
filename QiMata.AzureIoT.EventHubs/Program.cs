@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.ServiceBus.Messaging;
+using Newtonsoft.Json;
 
 namespace QiMata.AzureIoT.EventHubs
 {
@@ -12,6 +13,8 @@ namespace QiMata.AzureIoT.EventHubs
         static string eventHubName = "qimatainternetofthingsdemo";
         //Recieve Rule
         static string connectionString = "Endpoint=sb://qimatainternetofthingsdemo-ns.servicebus.windows.net/;SharedAccessKeyName=SendRule;SharedAccessKey=FMYB6V9mMbdALXVRKyUTWxt+D8Srm5aDj+7CW/UBYCU=";
+
+       static  Random random = new Random();
 
         static void Main(string[] args)
         {
@@ -28,7 +31,12 @@ namespace QiMata.AzureIoT.EventHubs
             {
                 try
                 {
-                    var message = Guid.NewGuid().ToString();
+                    var data = new DemoData
+                    {
+                        DeviceId = 1,
+                        Temperature = random.Next()
+                    };
+                    var message = JsonConvert.SerializeObject(data);
                     Console.WriteLine("{0} > Sending message: {1}", DateTime.Now.ToString(), message);
                     await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
                 }

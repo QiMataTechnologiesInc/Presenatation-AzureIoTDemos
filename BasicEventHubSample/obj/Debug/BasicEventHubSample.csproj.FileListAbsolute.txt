@@ -1,0 +1,6 @@
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\bins\BasicEventHubSample.exe.config
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\bins\BasicEventHubSample.exe
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\bins\BasicEventHubSample.pdb
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\BasicEventHubSample\obj\Debug\BasicEventHubSample.csprojResolveAssemblyReference.cache
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\BasicEventHubSample\obj\Debug\BasicEventHubSample.exe
+C:\Users\Jared Rhodes\Documents\Presenatation-AzureIoTDemos\BasicEventHubSample\obj\Debug\BasicEventHubSample.pdb
