@@ -26,13 +26,11 @@ namespace QiMata.AzureIoT.BluetoothClient.Android
         };
 
         private EventHubsClient.EventHubClient _eventHubClient;
-        private StatisticalContainer<EventHubData> _statisicalContainer;
         private Timer _bluetoothTimer;
 
         public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
         {
             _eventHubClient = new EventHubsClient.EventHubClient(EventHubSettings);
-            _statisicalContainer = new StatisticalContainer<EventHubData>(WriteValuesToEventHub);
 
             //Read the bluetooth values every .1 seconds and send it up to the hub every 10
             _bluetoothTimer = new Timer(delegate(object state) { Task.Factory.StartNew(async () => { await ReadBluetoothValuesAsync(); }); },
@@ -58,7 +56,6 @@ namespace QiMata.AzureIoT.BluetoothClient.Android
         private async Task ReadBluetoothValuesAsync()
         {
             //TODO: implement bluetooth service
-            _statisicalContainer.Add(new EventHubData());
         }
 
         private void WriteValuesToEventHub(IEnumerable<EventHubData> values)
